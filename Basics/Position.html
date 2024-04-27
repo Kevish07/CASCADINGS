@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        
+        .container{
+            border: 1px solid green ;
+        }
+        #p2{
+            position:relative;
+            top: 50px;
+        }
+        #p3{
+            position: absolute;
+            
+        }
+
+
+        .box{
+            margin-top:50px;
+            border: 3px solid black ;
+            height: 600px;
+        }
+        .four{
+            position: fixed;
+        }
+        .three{
+            position: sticky;
+            top: 100px;
+        }
+
+
+        .extra{
+            border: 5px solid black ;
+            height: 600px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>POSITION PROPERTIES</h1>
+
+    <div class="container">
+    <img src="logo1.png" id="p1"
+     alt="">
+
+    <img src="logo2.png" id="p2"
+     alt="">
+
+    <img src="logo3.png" id="p3"
+     alt="">
+
+    <img src="logo4.png" id="p4"
+     alt="">
+    </div>
+
+    <div class="box">
+        <img src="logo1.png" class="one"
+        alt="">
+
+        <img src="logo2.png" class="two"
+        alt="">
+
+        <img src="logo3.png" class="three"
+        alt="">
+
+        <img src="logo4.png" class="four"
+        alt="">
+    </div>
+
+    <div class="extra">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod nemo deleniti sequi! Enim iure, fugit quis, illum autem, nobis inventore obcaecati commodi perspiciatis earum tempora laborum incidunt quaerat quod quibusdam.
+    </div>
+    
+</body>
+</html>

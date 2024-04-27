@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .container {
+            width: auto;
+            height: 600px;
+            background-color: beige;
+            border: 5px solid black; 
+            
+
+        }
+        .box1{
+            background-color: aqua;
+            border-radius: 10px;
+            height: 50px;
+            width: 200px;
+            margin-top: 2px;
+            position: relative;
+            /* animation-name: box1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite; */
+            animation: 3s linear 1s infinite alternate none running rightMovement;
+        }
+        @keyframes rightMovement {
+            from {
+                top: 0;
+                left: 0;
+                
+            }
+
+            to {
+                top:0%;
+                left: 1000px;
+            }
+        }
+        .box2{
+            background-color: aqua;
+            border-radius: 10px;
+            height: 50px;
+            width: 200px;
+            margin: 5px;
+            position: relative;
+            animation: 3s linear 1s infinite alternate none running leftMovement;
+            
+        }
+        @keyframes leftMovement {
+            from {
+                top: 70%;
+                left: 1000px;
+            }
+
+            to {
+                top: 70%;
+                left: 0;
+            }
+        }
+        .circle{
+            position: relative; 
+            top: 35%; 
+            left: 45%; 
+            background-color: blue; 
+            border-radius: 100px; 
+            width: 70px; height: 70px; 
+            animation: 5s ease-in-out 0s alternate none running circleMovement;
+
+            
+        }
+        @keyframes circleMovement {
+            0%{
+                top: 35%; 
+                left: 45%;
+            }
+            25%{
+                top: 60px;
+                left: 0px;
+            }
+            50%{
+                top: 60px;
+                left: 1000px;
+
+            }
+            75%{
+                top: 400px;
+                left: 0px;
+            }
+            99%{
+                top: 400px;
+                left: 1000px;
+            }
+            100%{
+                top: 35%; 
+                left: 45%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+
+        </div>
+        <div class="circle">
+
+        </div>
+        <div class="box2">
+            
+        </div>
+        
+
+
+    </div>
+
+
+
+</body>
+</html>
