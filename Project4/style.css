@@ -245,7 +245,7 @@ main{
 }
 .container2{
     background-color: gainsboro;
-    height: fit-content;
+    height: 100vh;
     /* width: 100vw; */
     margin-top: 2rem;
     padding: 2rem;
@@ -304,6 +304,19 @@ main{
     gap: 2rem;
     grid-template-rows: repeat(3,1fr);
     grid-template-columns: repeat(2,1fr);
+    cursor: pointer;
+    transition: 400ms;
+}
+.card {
+    transition: 400ms;
+}
+.cards .card:hover {
+    transform: scale(1.1, 1.1);
+}
+  
+.cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
 }
 .content4{
     display: flex;
